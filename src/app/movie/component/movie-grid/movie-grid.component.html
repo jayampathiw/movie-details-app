@@ -1,0 +1,7 @@
+<div class="movie-grid-container">
+  <mat-grid-list cols="4" rowHeight="350px" gutterSize="16px">
+    <mat-grid-tile *ngFor="let movie of movies">
+      <app-movie-card></app-movie-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

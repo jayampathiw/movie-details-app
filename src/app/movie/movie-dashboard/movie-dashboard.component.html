@@ -1,0 +1,32 @@
+<mat-drawer-container class="movie-dashboard-container">
+  <mat-toolbar>
+    <mat-icon fontIcon="home"></mat-icon>
+    <span class="dashboard_title">Movie database</span>
+  </mat-toolbar>
+  <mat-drawer
+    #drawer
+    mode="side"
+    disableClose="true"
+    opened="true"
+    position="end"
+  >
+    <mat-nav-list>
+      <mat-list-item>
+        <div class="filter_content">
+          <mat-icon fontIcon="filter_list"></mat-icon>
+          <span>Filter Movies</span>
+        </div>
+      </mat-list-item>
+      <app-movie-filter-panel></app-movie-filter-panel>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <div class="movie-details-content">
+    <div class="movie-details-search">
+      <app-movie-search></app-movie-search>
+    </div>
+    <div class="movie-details-results">
+      <app-movie-grid></app-movie-grid>
+    </div>
+  </div>
+</mat-drawer-container>

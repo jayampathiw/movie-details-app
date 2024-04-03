@@ -1,0 +1,10 @@
+.user-rating-container {
+  width: 10rem;
+  .user-rating-headding-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .user-rating-slider {
+    width: 10rem;
+  }
+}

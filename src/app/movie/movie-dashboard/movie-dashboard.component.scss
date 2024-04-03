@@ -1,0 +1,43 @@
+.movie-dashboard-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dashboard_title {
+  padding-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+mat-nav-list {
+  width: 4rem;
+  overflow: hidden;
+  transition: width 0.3s;
+  span,
+  app-movie-filter-panel {
+    opacity: 0;
+  }
+}
+
+mat-drawer:hover {
+  mat-nav-list {
+    width: 12rem;
+    .filter_content {
+      display: flex;
+      gap: 0.5rem;
+    }
+    span,
+    app-movie-filter-panel {
+      opacity: 1;
+      margin: auto 0.75rem;
+      transition: all 0.1s ease-in 0.2s;
+    }
+  }
+}
+
+.movie-details-content {
+  width: 90%;
+  padding: 1rem;
+}
